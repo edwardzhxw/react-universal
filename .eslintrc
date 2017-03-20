@@ -1,0 +1,26 @@
+{ "extends": "plugin:jsx-a11y/recommended",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": 0,
+    "max-len": 0,
+    "no-confusing-arrow": 0,
+    "no-constant-condition": 0,
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-indent": 0
+  },
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "parser": "babel-eslint",
+  "globals": {
+    "__DEVELOPMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DEVTOOLS__": true,
+    "__Reactotron__": true
+  }
+}
