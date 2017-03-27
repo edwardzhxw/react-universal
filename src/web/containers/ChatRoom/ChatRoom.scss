@@ -1,0 +1,39 @@
+.logo {
+  margin: 0 -50px;
+  padding: 50px 0;
+  background: #000;
+  text-align: center;
+  img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  h1, h2, p {color: #fff}
+  h1 {font-size: 48px}
+  h2 {margin-bottom: 20px}
+}
+.github {
+  i {margin-right: 5px}
+  color: #fff;
+  font-size: 24px;
+}
+.intro {
+  margin: 20px auto;
+  max-width: 768px;
+  ul {
+    padding-left: 30px;
+    list-style: circle;
+    li {font-size: 16px}
+  }
+}
+.buttons {
+  margin: 20px 0;
+  button {
+    margin: 10px;
+  }
+}
+.images {
+  margin: 20px auto;
+  width: 975px;
+  overflow: auto;
+  text-align: center;
+}

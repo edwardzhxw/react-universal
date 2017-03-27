@@ -14,3 +14,5 @@ Technologies:
 * Webpack Dev Middleware -- Offers a dev middleware for webpack, which arguments a live bundle to a directory
 * Webpack Hot Middleware -- Webpack hot reloading you can attach to your own server
 * ESLint -- The pluggable linting utility for JavaScript and JSX
+* Mongoose -- Provides a straight-forward, schema-based solution to model your application data
+* socket.io/socket.io-client -- real-time bidirectional event-based communication.

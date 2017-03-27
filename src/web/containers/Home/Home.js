@@ -79,13 +79,23 @@ export default class Home extends Component {
             <li>
               <strong>ESLint</strong> -- The pluggable linting utility for JavaScript and JSX
             </li>
+	          <li>
+		          <strong>Mongoose</strong> -- Provides a straight-forward, schema-based solution to model your application data
+	          </li>
+	          <li>
+		          <strong>socket.io/socket.io-client</strong> -- real-time bidirectional event-based communication.
+	          </li>
           </ul>
+	        <div className={styles.buttons}>
+		        <h1>Counter and Fetch</h1>
+		        <Button type="primary" onClick={counterAdd}>Count: {counter.number}</Button>
+		        <Button type="primary" icon="cloud-download-o" onClick={this.handleClick} loading={discover.loading}>
+			        Load Images Page {discover.payload.page + 1}
+		        </Button>
+	        </div>
           <div className={styles.buttons}>
-            <h1>Counter and Fetch</h1>
-            <Button type="primary" onClick={counterAdd}>Count: {counter.number}</Button>
-            <Button type="primary" icon="cloud-download-o" onClick={this.handleClick} loading={discover.loading}>
-              Load Images Page {discover.payload.page + 1}
-            </Button>
+            <h1>LINK</h1>
+	          <a href="chat_room">ChatRoom - WebSocket,base on socket.io and socket.io-client</a>
           </div>
         </div>
         <div className={styles.images}>

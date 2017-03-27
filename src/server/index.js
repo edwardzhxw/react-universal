@@ -23,6 +23,27 @@ const port = process.env.PORT || 4000;
 app.use(Express.static(path.join(__dirname, '/')));
 app.use(favicon(path.join(__dirname, './favicon.ico')));
 const server = http.createServer(app);
+
+//WebSocket
+const io = require('socket.io')(server);
+
+io.on('connection', function (socket) {
+	console.log('connected');
+	socket.on('login', function (obj) {
+		console.log('>>>>LOGIN', obj.userName);
+		socket.name = obj.userName;
+		io.emit('login', obj);
+	});
+	socket.on('message', function(obj){
+		io.emit('message', obj);
+		console.log(obj.userName+':'+obj.content);
+	});
+	socket.on('disconnect', function () {
+		console.log('>>>>client disconnected ')
+	});
+});
+
+
 const pe = new PrettyError();
 pe.skipNodeFiles();
 
