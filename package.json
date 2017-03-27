@@ -27,6 +27,7 @@
     "express": "^4.14.0",
     "fs": "0.0.1-security",
     "isomorphic-fetch": "^2.2.1",
+    "mongoose": "^4.9.2",
     "pretty-error": "^2.0.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

@@ -15,6 +15,9 @@ import Html from './Html';
 import create from '../common/redux/store';
 import manifest from './manifest.json';
 
+//connect with database
+const db = require('./db');
+
 const app = new Express();
 const port = process.env.PORT || 4000;
 app.use(Express.static(path.join(__dirname, '/')));
